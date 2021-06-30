@@ -12,30 +12,67 @@
       crossorigin="anonymous"
     />
 
-    <title>Health Track - Entre ou Cadastre-se</title>
+    <title>HealthTrack - Entre ou Cadastre-se</title>
   </head>
   <body>
     <body>
     <div class="container">
-      
-        <a class="btn btn-primary p" data-bs-toggle="collapse" href="#collapseLogin" role="button" aria-expanded="false" aria-controls="collapseLogin" id="collapseLoginBtn">
+      <main>
+        <h1>health track</h1><br>
+        <h2>Coloque a sua saúde no caminho certo.</h2>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseLogin" role="button" aria-expanded="false" aria-controls="collapseLogin" id="collapseLoginBtn">
           Entrar
         </a>
         <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseRegister" role="button" aria-expanded="false" aria-controls="collapseRegister" id="collapseRegisterBtn">
           Inscrever-se
         </a>
+    </main>
+    <div class="collapse" id="collapseLogin">
+      <div class="card card-body">
+        
+        <form id="logInForm" action="">
+          <label for="email">
+            <span>Email</span>
+            <input type="email" id="email" name="email">
+          </label>
+          <label for="password">
+            <span>Senha</span>
+            <input type="password" id="password" name="password">
+          </label>
+          <input type="submit" value="Log In">
+        </form>
 
+      </div>
+    </div>
 
-      <div class="collapse" id="collapseLogin">
-        <div class="card card-body">
-          FORMULARIO LOGIN
-        </div>
+    <div class="collapse" id="collapseRegister">
+      <div class="card card-body">
+        
+        <form id="signInForm" action="">
+          <label for="nome">
+            <span>Nome</span>
+            <input type="text" id="name" name="name">
+          </label>
+          <label for="email">
+            <span>Email</span>
+            <input type="email" id="email" name="email">
+          </label>
+          <label for="passwordFisrt">
+            <span>Senha</span>
+            <input type="password" id="passwordFirst" name="passwordFirst">
+          </label>
+          <label for="passwordConfirm">
+            <span>Confirme sua senha</span>
+            <input type="password" id="passwordConfirm" name="passwordConfirm">
+          </label>
+          <input type="submit" value="Inscrever-se">
+        </form>
+
       </div>
-      <div class="collapse" id="collapseRegister">
-        <div class="card card-body">
-          FORMULARIO REGISTRO
-        </div>
-      </div>
+    </div>
+    <section class="cover">
+      <a href=""><img src="assets/cover.jpg" alt=""></a>
+    </section>
 
 
 

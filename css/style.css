@@ -1,46 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
 body {
-  background-color: rgb(180, 255, 255) !important;
+  background-color: rgb(130, 230, 183) !important;
+}
+
+main {
+  color: rgb(12, 12, 12);
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 15px;
+  top: 80px;
+}
+
+main h2 {
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+  margin: 2rem;
+  padding-bottom: 120px;
+}
+
+main h1 {
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+  margin: 1rem;
+  justify-content: left;
+  padding-top: 20px;
+  padding-bottom: 0;
 }
 
 
+#collapseLoginBtn, #collapseRegisterBtn {
+  cursor: pointer;
+  width: 300px;
+  height: 50px;
+  margin: 0.5rem;
+  border: 4px white;
+  border-radius: 32px;
+  background: #ffffff;
+  color: rgb(107, 197, 119);
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+}
 
-#collapseLoginBtn {
+.cover {
+    width: 50vw;
+    display: flex;
+    align-items: flex-start;  
+    position: fixed;
+    left: 0px;
+    z-index: -1;
+}
+
+#collapseLoginBtn:hover {
+  background: rgb(5, 134, 80);
   color: #ffffff;
-  position: absolute;
-  bottom: 200px;
-  right: 230px;
-  margin: 7px;
-  width: 250px;
 }
 
-#collapseRegisterBtn {
-  color:hsl(0, 100%, 100%);
-  position: absolute;
-  bottom: 155px;
-  right: 230px;
-  margin: 7px;
-  width: 250px;
+#collapseRegisterBtn:hover {
+  background: rgb(5, 134, 80);
+  color: #ffffff;
 }
 
 
 
-
-@media screen and (max-width: 1920px) {
-  main {
-    height: 70vh;
-  }
-}
 
 @media screen and (max-width: 980px) {
   main {
     height: 60vh;
   }
   #collapseLoginBtn {
-    display: flex;
-    justify-content: center;
+    position: absolute;
   }
   #collapseRegisterBtn {
-    display: flex;
-    justify-content: center;
+    position: absolute;
   }
 }

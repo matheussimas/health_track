@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(180, 255, 255) !important;
+}
+
+
+
+#collapseLoginBtn {
+  color: #ffffff;
+  position: absolute;
+  bottom: 200px;
+  right: 230px;
+  margin: 7px;
+  width: 250px;
+}
+
+#collapseRegisterBtn {
+  color:hsl(0, 100%, 100%);
+  position: absolute;
+  bottom: 155px;
+  right: 230px;
+  margin: 7px;
+  width: 250px;
+}
+
+
+
+
+@media screen and (max-width: 1920px) {
+  main {
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  main {
+    height: 60vh;
+  }
+  #collapseLoginBtn {
+    display: flex;
+    justify-content: center;
+  }
+  #collapseRegisterBtn {
+    display: flex;
+    justify-content: center;
+  }
+}

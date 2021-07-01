@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 * {
   margin: 0;
@@ -10,11 +10,14 @@
 
 body {
   background-color: rgb(130, 230, 183) !important;
+  display: flex;
+  min-height: 100vw;
+  min-width: 100vw;
 }
 
 main {
   color: rgb(12, 12, 12);
-  width: 45vw;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,6 +25,7 @@ main {
   position: absolute;
   right: 15px;
   top: 80px;
+  padding: 2rem 4rem;
 }
 
 main h2 {
@@ -40,8 +44,8 @@ main h1 {
   padding-bottom: 0;
 }
 
-
-#collapseLoginBtn, #collapseRegisterBtn {
+#collapseLoginBtn,
+#collapseRegisterBtn {
   cursor: pointer;
   width: 300px;
   height: 50px;
@@ -54,15 +58,6 @@ main h1 {
   transition: all 0.3s ease-in-out;
 }
 
-.cover {
-    width: 50vw;
-    display: flex;
-    align-items: flex-start;  
-    position: fixed;
-    left: 0px;
-    z-index: -1;
-}
-
 #collapseLoginBtn:hover {
   background: rgb(5, 134, 80);
   color: #ffffff;
@@ -73,17 +68,55 @@ main h1 {
   color: #ffffff;
 }
 
+.cover {
+  background: url(/assets/cover.jpg);
+  width: 50vw;
+  position: absolute;
+  left: 0px;
+  height: 100vw;
+}
 
-
-
-@media screen and (max-width: 980px) {
-  main {
-    height: 60vh;
+@media screen and (min-width: 1001px) and (max-width: 1400px) {
+  .cover {
+    height: 50vw;
   }
-  #collapseLoginBtn {
+
+  main {    
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
+    top: 50px;
+    padding: 1rem 1rem;
   }
-  #collapseRegisterBtn {
-    position: absolute;
+
+  main h2 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    margin: 2rem;
+    padding-bottom: 50px;
+  }
+
+  main h1 {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    margin: 5px;
+    justify-content: left;
+    padding-top: 5px;
+    padding-bottom: 1rem;
+  }
+  body {
+    background-color: rgb(130, 230, 183) !important;
+    display: flex;
+    min-height: 50vw;
+    min-width: 50vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cover {
+    display: none;
   }
 }

@@ -72,7 +72,7 @@ main h1 {
 
 .cover {
   background: url(/assets/cover.jpg);
-  width: 50vw;
+  width: 48%;
   position: absolute;
   left: 0px;
   height: 50vw;

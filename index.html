@@ -26,50 +26,63 @@
         <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseRegister" role="button" aria-expanded="false" aria-controls="collapseRegister" id="collapseRegisterBtn">
           Inscrever-se
         </a>
+
+
+
+        <section class="popUpForm" id="loginCard">
+          <div class="collapse" id="collapseLogin">
+            <div class="card card-body" style="width: 30rem;" >
+              <h3>Log In</h3>
+              <form id="logInForm" action="">
+                <div class="form-group row">
+                </label>
+                <label for="email" style="padding: 15px;">
+                  <span>Email</span><br>
+                  <input type="email" id="email" name="email">
+                </label>
+                <label for="password" style="padding: 15px;">
+                  <span>Senha</span><br>
+                  <input type="password" id="password" name="password">
+                </label>
+                <input id="submitLogin" class="btn btn-primary" type="submit" value="Log In" style="width: auto; background-color: rgb(5, 134, 80); margin-top: 15px; border: none;">
+              </div>
+              </form>
+            </div>
+          </div>
+        </section>
+    
+        <section class="popUpForm" id="signinCard">
+          <div class="collapse" id="collapseRegister">
+            <div class="card card-body" style="width: 30rem;">
+              <h3>Registre-se</h3>
+              <form id="signInForm" action="">
+                <div class="form-group row">
+                <label for="nome" style="padding: 15px;">
+                  <span>Nome</span><br>
+                  <input type="text" id="name" name="name">
+                </label>
+                <label for="email" style="padding: 15px;">
+                  <span>Email</span><br>
+                  <input type="email" id="email" name="email">
+                </label>
+                <label for="passwordFisrt" style="padding: 15px;">
+                  <span>Senha</span><br>
+                  <input type="password" id="passwordFirst" name="passwordFirst">
+                </label>
+                <label for="passwordConfirm" style="padding: 15px;">
+                  <span>Confirme sua senha</span><br>
+                  <input type="password" id="passwordConfirm" name="passwordConfirm">
+                </label>
+                <input id="submitRegister" class="btn btn-primary" type="submit" value="Inscrever-se" style="width: auto; background-color: rgb(5, 134, 80); margin-top: 15px; border: none">
+              </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
     </main>
-    <div class="collapse" id="collapseLogin">
-      <div class="card card-body">
-        
-        <form id="logInForm" action="">
-          <label for="email">
-            <span>Email</span>
-            <input type="email" id="email" name="email">
-          </label>
-          <label for="password">
-            <span>Senha</span>
-            <input type="password" id="password" name="password">
-          </label>
-          <input type="submit" value="Log In">
-        </form>
+   
 
-      </div>
-    </div>
-
-    <div class="collapse" id="collapseRegister">
-      <div class="card card-body">
-        
-        <form id="signInForm" action="">
-          <label for="nome">
-            <span>Nome</span>
-            <input type="text" id="name" name="name">
-          </label>
-          <label for="email">
-            <span>Email</span>
-            <input type="email" id="email" name="email">
-          </label>
-          <label for="passwordFisrt">
-            <span>Senha</span>
-            <input type="password" id="passwordFirst" name="passwordFirst">
-          </label>
-          <label for="passwordConfirm">
-            <span>Confirme sua senha</span>
-            <input type="password" id="passwordConfirm" name="passwordConfirm">
-          </label>
-          <input type="submit" value="Inscrever-se">
-        </form>
-
-      </div>
-    </div>
     <section class="cover">
       <a href="#"></a>
     </section>

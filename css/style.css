@@ -121,4 +121,49 @@ main h1 {
   .cover {
     display: none;
   }
+  main {    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;;
+  }
+
+  main h2 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin: 1rem;
+    padding-bottom: 10px;
+  }
+
+  main h1 {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    margin: 5px auto;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 1rem;
+  }
+
+  body {
+    background-color: rgb(130, 230, 183) !important;
+    display: flex;
+    min-height: 100%;
+    min-width: 100%;
+  }
+
+   #collapseLoginBtn,
+   #collapseRegisterBtn {
+   cursor: pointer;
+   width: 150px;
+   height: 30px;
+   margin: 3px auto;
+   font-size: 0.9rem;
+   align-items: center;  
+}
+  
+}
+
 }
